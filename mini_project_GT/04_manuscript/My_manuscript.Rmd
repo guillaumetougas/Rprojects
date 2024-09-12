@@ -3,6 +3,8 @@ title: "My_manuscript"
 author: "Guillaume Tougas"
 date: "`r Sys.Date()`"
 output: pdf_document
+bibliography: references.bib
+csl:              
 ---
 
 ```{r setup, include=FALSE}
@@ -28,6 +30,9 @@ plot(pressure)
 ```
 
 <!-- Adding already made plot from the 03_figures directory" -->
-<!-- ![](../03_figures/plot.png) -->
+
+<!-- ![](../03_figures/plot.png) --> [@nordt2021]
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Upload, Update and Download with Trackdown to upload on Google Drive
