@@ -1,10 +1,11 @@
 ---
-title: "My_manuscript"
+title: "Evaluation of plant species phenology in world botanical gardens"
+subtitle: "Mini-project, Living Data Project Productivity and Reproducibility course"
 author: "Guillaume Tougas"
 date: "`r Sys.Date()`"
 output: pdf_document
 bibliography: references.bib
-csl:              
+csl: apa.csl              
 ---
 
 ```{r setup, include=FALSE}
@@ -31,7 +32,9 @@ plot(pressure)
 
 <!-- Adding already made plot from the 03_figures directory" -->
 
-<!-- ![](../03_figures/plot.png) --> [@nordt2021]
+<!-- ![](../03_figures/plot.png) -->
+
+[@nordt2021]
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
