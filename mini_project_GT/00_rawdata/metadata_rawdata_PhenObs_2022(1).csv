@@ -1,0 +1,15 @@
+﻿Column_name;Description;Datatype;Unit;Data_details
+Species;Species name.;String;None;The species are named with reference to the Leipzig Catalogue of vascular plants (https://doi.org/10.1038/s41597-020-00702-z).
+Botanic_Garden;Name of Botanical garden.;String;None;None
+Species_ID;ID combining the species and the botanic garden;String;None;First three letters of the genus, the species, if needed the subspecies and the botanic garden. For a few exceptions where the first three letters of two genus would be the same, the first four letters were taken.
+Date;Date of data recording.;Date;yyyy-mm-dd;None
+Doy;Date of data recording tranformed in the day of the year.;Integer;Day of Year;None
+Initial vegetative growth;Observation of initial growth, first appearance of a new shoot aboveground.;String;None;"""y"" indicates that this species showed initital growth, ""no"" indicates that this species showed no initial growth, ""m"" indicates that the observations is missing for this date and ""u"" indicates that the observer was not sure whether initial growth could be observed or not."
+Young leaves unfolding;Observation of unfolding of young leaves.;String;None;"""y"" indicates that this species showed unfolding of young leaves, ""no"" indicates that this species showed no unfolding of young leaves, ""m"" indicates that the observations is missing for this date and ""u"" indicates that the observer was not sure whether young leaves are unfoldet or not."
+Flowers opening;Observation of unfolding of open flowers.;String;None;"""y"" indicates that this species showed open flowers, ""no"" indicates that this species showed no open flowers, ""m"" indicates that the observations is missing for this date and ""u"" indicates that the observer was not sure whether floweres are open or not."
+Flowering intensity;The proportion of observed open flowers in relation to the total number of flowering buds and fruits.;Integer;%;NA indicates not available.
+Ripe fruits;Observation of ripe fruits.;String;None;"""y"" indicates that this species had ripe fruits, ""no"" indicates that this species had no ripe fruits, ""m"" indicates that the observations is missing for this date and ""u"" indicates that the observer was not sure whether fruits were ripe or not."
+Senescence;Observation of signs of senescence.;String;None;"""y"" indicates that this species had senescent leaves, ""no"" indicates that this species showed no senescent leaves, ""m"" indicates that the observations is missing for this date and ""u"" indicates that the observer was not sure whether senescent leaves were senescent or not."
+Senescence intensity ;The percentage of senescent leaves in relation to the whole vegetative biomass.;Integer;%;NA indicates not available.
+Maintenance;Information about maintenance practice. For more information see the PhenObs protocol (https://doi.org/10.1111/1365-2435.13747).;String;None;None
+Remarks;Important notes which are useful when analysing the data.;String;None;None

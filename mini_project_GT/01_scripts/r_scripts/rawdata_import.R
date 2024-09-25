@@ -4,14 +4,17 @@
 #verify that the R project is the wd
 getwd() #If not, change it to "mini-project_GT" folder
 
-#link for downloading the raw data from PhenObs database in 2022 
-url_raw <-  "https://idata.idiv.de/MMM/ShowMultimediaData/getFile?path=Datasets%255c3550%255crawdata_PhenObs_2022%281%29.csv"
-destfile_raw <- "00_rawdata/PhenObs_2022_rawdata.csv"  # Path to save the file
+#link for downloading the PhenObs database in 2022 (Zip format)
+url_zip <-  "https://idata.idiv.de/ddm/Data/DownloadZip/3550?version=6276"
+destfile_zip <- "00_rawdata/PhenObs.zip"  # Path to save the file
 
-download.file(url=url_raw,destfile= destfile_raw) #Downloading file in the right directory
+#download file from URL to destination
 
-#link for downloading the processed data from PhenObs database in 2022 
-url_proc <-  "https://idata.idiv.de/MMM/ShowMultimediaData/getFile?path=Datasets%255c3550%255cprocesseddata_PhenObs_2022%281%29.csv"
-destfile_proc <- "00_rawdata/PhenObs_2022_processeddata.csv"  # Path to save the file
+download.file(url_zip, destfile_zip,method = "curl") #Downloading file in the right directory
 
-download.file(url=url_proc,destfile= destfile_proc) #Downloading file in the right directory
+#Unzip Zip file
+unzip("./00_rawdata/phenObs.zip", exdir = "./00_rawdata")
+
+#read csv data to make sure data is readable
+phenObs_proc <- read.csv("00_rawdata/processeddata_PhenObs_2022(1).csv", sep = ";") #Processed data
+phenObs_raw <- read.csv("00_rawdata/rawdata_PhenObs_2022(1).csv", sep = ";") #Raw data
