@@ -1,4 +1,3 @@
-
 #This script imports data directly from the PhenObs database online into the 00_rawdata folder of the project
 
 #verify that the R project is the wd
