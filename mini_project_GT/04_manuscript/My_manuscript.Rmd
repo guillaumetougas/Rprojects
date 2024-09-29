@@ -14,9 +14,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-Botanic gardens have played an important role in the popularization of plant biology in occidental societies for already several decades [@krishnanRoleBotanicGardens2017].They help bridge the gap between scientists and the general public. 
+Botanic gardens have played an important role in the popularization of plant biology in occidental societies for already several decades [@krishnanRoleBotanicGardens2017].They help bridge the gap between scientists and the general public.
 
-However, these island of green can also be useful to scientists and are an important source of phenological data[@primackGrowingVitalRole2021]. With climate change affecting plant communities and causing populational and phenological shifts[@vellendPlantResponsesClimate2021], these places regrouping plant individuals from everywhere in the world subjected to variable environmental conditions in different biomes are a window on plant species' capability to withstand changes. That special setting gives meaning to the existence of the **PhenObs initiative** (Phenological Observation Network) [@nordtPhenObsInitiativeStandardised2021]. It is a collaborative research project designed to track and monitor plant phenology in these particular and rich sites that are botanic gardens. PhenObs focuses on gathering detailed observations on plant phenology across multiple biomes to understand how climate change and other environmental factors impact vegetation and biodiversity.
+However, these island of green can also be useful to scientists and are an important source of phenological data [@primackGrowingVitalRole2021]. With climate change affecting plant communities and causing populational and phenological shifts [@vellendPlantResponsesClimate2021], these places regrouping plant individuals from everywhere in the world subjected to variable environmental conditions in different biomes are a window on plant species' capability to withstand changes. That special setting gives meaning to the existence of the **PhenObs initiative** (Phenological Observation Network) [@nordtPhenObsInitiativeStandardised2021]. It is a collaborative research project designed to track and monitor plant phenology in these particular and rich sites that are botanic gardens. PhenObs focuses on gathering detailed observations on plant phenology across multiple biomes to understand how climate change and other environmental factors impact vegetation and biodiversity.
 
 This initiative relies on data collected by researchers and citizen scientists in various cities from around the globe (though mostly in Europe).
 
@@ -31,10 +31,15 @@ We measured different phenological traits for repeating species in botanical gar
 ```{r table, echo=FALSE, fig.cap="Table: Data from the CSV file"}
 
 # Load the CSV file
-table <- read.csv("../03_figures/table_peak_fl_sen.csv", sep = ",")
+library(knitr)
+table <- read.csv("../03_figures/table_peak_fl_sen.csv",stringsAsFactors = FALSE, encoding = "UTF-8")
+table <-data.frame(lapply(table, as.character), stringsAsFactors = FALSE)
+
 
 # Display the table with a caption
-knitr::kable(table, caption = "Peak flowering and senescing events of Achillea Millefolium for  every botanical garden")
+
+knitr::kable(table, format = "simple", caption = "Peak of flowering and senescence for Achillea Millefolium in different gardens")
+
 ```
 
 ![](../03_figures/botanic_garden_peakflowering.png)
