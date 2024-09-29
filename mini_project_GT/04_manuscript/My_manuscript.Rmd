@@ -22,7 +22,20 @@ This initiative relies on data collected by researchers and citizen scientists i
 
 ## Methods
 
+We measured different phenological traits for repeating species in botanical gardens across the northern hemisphere.
+
 ## Results
+
+# Table Display
+
+```{r table, echo=FALSE, fig.cap="Table: Data from the CSV file"}
+
+# Load the CSV file
+table <- read.csv("../03_figures/table_peak_fl_sen.csv", sep = ",")
+
+# Display the table with a caption
+knitr::kable(table, caption = "Peak flowering and senescing events of Achillea Millefolium for  every botanical garden")
+```
 
 ![](../03_figures/botanic_garden_peakflowering.png)
 

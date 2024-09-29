@@ -7,10 +7,16 @@ library(tidyverse)
 #Make sure that we are in the good directory
 getwd()
 
-phenobs <- read.csv("00_rawdata/processeddata_PhenObs_2022.csv", sep=";")
+phenobs <- read.csv("00_rawdata/processeddata_PhenObs_2022(1).csv", sep=";")
 
 #Set common theme for plots
 theme_set(theme_bw())
+
+table_AM <- phenobs[phenobs$Species=="Achillea millefolium",]
+
+table_AM_fl_sen_peak<- table_AM[,c(2,8,15)]
+
+write.csv(table_AM_fl_sen_peak, "03_figures/table_peak_fl_sen.csv", row.names = F)
 
 #Plotting ranges in flowering peak for all gardens 
 ggplot(phenobs,aes(Botanic_Garden,FlPeak))+
