@@ -26,6 +26,16 @@ Different phenological traits were measured for common species found in a wide s
 
 ## Results
 
+There was great variability between the day of peak flowering regardless of the species involved, particularly for most northern and continental places, such as the Petrozavodsk Botanical Garden, in Russia (Figure 1). 
+
+![](../03_figures/botanic_garden_peakflowering.png)
+\begin{center}
+Figure 1 : Comparison of flowering peak at all sampled Botanic Gardens
+\end{center}
+
+Even greater differences could be observed at the species level. For example, flowering peaks could be different by as muuch as 57 days for Achillea Millefolium (Table 1).
+
+
 ```{r table, echo=FALSE, fig.cap="Table: Data from the CSV file"}
 
 # Load the CSV file
@@ -40,14 +50,8 @@ knitr::kable(table, format = "simple", caption = "Peak of flowering and senescen
 
 ```
 
-![](../03_figures/botanic_garden_peakflowering.png)
-
-Figure 1 : Comparison of flowering peak at all sampled Botanic Gardens
-
 ## Discussion
 
 In the PhenObs experiment, latitude serves as a reliable proxy for climate variation because it is closely linked to temperature and seasonal changes, which influence plant phenology. As expected, longitude, however, is less effective as a proxy for climate change, as it does not capture the same consistent environmental gradients due to differing continental influences, ocean currents, and topography. Therefore, while latitude strongly affects plant responses to climate, longitude contributes more indirectly through localized climate conditions.
 
 ## Bibliography
-
-
