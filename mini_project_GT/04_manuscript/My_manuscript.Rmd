@@ -1,5 +1,5 @@
 ---
-title: "Evaluation of plant species phenology in world botanical gardens"
+title: "Evaluation of a wide range of plant species phenology in botanical gardens across the world"
 subtitle: "Mini-project, Living Data Project Productivity and Reproducibility course"
 author: "Guillaume Tougas"
 date: "`r Sys.Date()`"
@@ -22,11 +22,9 @@ This initiative relies on data collected by researchers and citizen scientists i
 
 ## Methods
 
-We measured different phenological traits for repeating species in botanical gardens across the northern hemisphere.
+Different phenological traits were measured for common species found in a wide selection of botanical gardens from across the world. Indeed, the flowering onset, flowering peak and senescence of the plant were systematically noted for every population sampled.
 
 ## Results
-
-# Table Display
 
 ```{r table, echo=FALSE, fig.cap="Table: Data from the CSV file"}
 
@@ -47,5 +45,7 @@ knitr::kable(table, format = "simple", caption = "Peak of flowering and senescen
 Figure 1 : Comparison of flowering peak at all sampled Botanic Gardens
 
 ## Discussion
+
+In the PhenObs experiment, latitude serves as a reliable proxy for climate variation because it is closely linked to temperature and seasonal changes, which influence plant phenology. As expected, longitude, however, is less effective as a proxy for climate change, as it does not capture the same consistent environmental gradients due to differing continental influences, ocean currents, and topography. Therefore, while latitude strongly affects plant responses to climate, longitude contributes more indirectly through localized climate conditions.
 
 ## Bibliography
