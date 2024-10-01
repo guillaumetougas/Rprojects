@@ -2,6 +2,16 @@
 Species;Species;None;String;Species name.
 Botanic_Garden;Botanic_Garden;None;String;Name of Botanical garden.
 Species_ID;Species_ID;None;Aaa_aaa_Aaa;ID combining the species and the botanic garden
+Date;Date;Date;dd.mm.yyyy;Date of observation (raw data)
+Day of year;Doy;Day of Year;NA, 1:365;Day of year for population observation (raw data)
+Initial vegetative growth;Initial.vegetative.growth;None;y,m,no;At the sampled date, was there initial vegetative growth (Yes=y, Maybe=m or No=no)
+Young leaves unfolding;Young.leaves.unfolding;None;y,m,no;At the sampled date, were there young leaves unfolding (Yes=y, Maybe=m or No=no)
+Flowers opening;Flowers.opening;None;y,m,no;At the sampled date, were there flowers opening (Yes=y, Maybe=m or No=no)
+Flowering intensity;Flowering.intensity;%;NA, 0:100 in jumps of 5;At the sampled date, what was the flowering intensity.
+Ripe fruits;Ripe.fruits;None;y,m,no;At the sampled date, were there ripe fruits (Yes=y, Maybe=m or No=no)
+Senescence;Senescence;None;y,m,no;At the sampled date, was there senescence (Yes=y, Maybe=m or No=no)
+Senescence intensity;Senescence.intensity;%;NA, 0:100 in jumps of 5;At the sampled date, what was the senescence intensity.
+Maintenance;Maintenance;None;String;Type of maintenance on population in the garden (NA= no maintenance, cut partly, covered, …)
 Year;Year;yyyy;2022 only;Year the phenological observation was conducted.
 Initial Growth;InitGr;Day of Year;NA, 1:365;Initial growth, first appearance of a new shoot aboveground.
 Leaf Unfolding;LeafUnf;Day of Year;NA, 1:365;Onset of leaf unfolding, the first leaf is unfolded.
@@ -9,7 +19,7 @@ Flowering Onset;FlOn;Day of Year;NA, 1:365;Onset of flowering, first flower is f
 Flowering Peak;FlPeak;Day of Year;NA, 1:365;Peak of flowering, the day of the year with the highest flowering intensity.
 Flowering Maximum Intensity;FlMaxInt;%;NA, 0:100 in jumps of 5;Maximum intensity of flowering, the maximum percentage of open flowers in the observed population. The maximum number of flowers opening at the same time in each population is defined as the 100 % standard.
 Flowering End;FlEnd;Day of Year;NA, 1:365;End of flowering, no more flowers are open,stamen and stigma are withered.
-Flowering Duration;FlDur;days;NA, 1:365;Flowering duration, calculated from the number of days between the onset and the end of the flowering stage.
+Flowering Duration;FlDur;Days;NA, 1:365;Flowering duration, calculated from the number of days between the onset and the end of the flowering stage.
 Fruiting Onset;FrOn;Day of Year;NA, 1:365;Onset of fruiting, date of first ripe fruits.
 Fruiting End;FrEnd;Day of Year;NA, 1:365;End of fruiting, no more ripe fruits are visible.
 Senescence Onset;SenOn;Day of Year;NA, 1:365;Onset of senescence, leaves are changing colour,drying out or falling off.
